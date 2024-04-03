@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: pink;">
+    
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Ajeng.</strong>
+                        <p>
+                            Kiranya jika kamu berkenan. 
+                            Apakah kamu ingin jalan bersamaku lagi untuk beberapa hari kedepan. 
+                        </p>
+                    </div>
+                </div>
+                <div class="heart"></div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container"> 
+        <center>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="peresent2.html" class="iya-mau">
+                    <span class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-gray-700"></span>
+                    <span class="fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-black px-3 py-1 text-base font-bold text-white transition duration-100 hover:bg-gray-900 hover:text-yellow-500">Iya mau</span>
+                </a>
+                <a href="" class="enggak-mau">
+                    <span class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-gray-700 fold-bold relative inline-block rounded border-2 border-black bg-black px-3 py-1 text-base font-bold text-white transition duration-100 hover:bg-gray-900 hover:text-yellow-500">
+                        Enggak mau
+                    </span>
+                    
+                </a>
+            </div>
+        </center>
+    </div>
+    
+    
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
